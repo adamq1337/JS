@@ -1,0 +1,89 @@
+
+p{
+    animation: pointdown 1s infinite alternate-reverse;
+}
+
+@keyframes pointdown{
+0%{
+    transform: translate(0, 0)
+}
+100%{
+    transform: translate(0, 16px)
+}
+}
+
+
+ 
+p::before{
+
+    content: "Hey my name is";
+
+}
+
+
+p::after{
+
+    content: ", this is my portfolio";
+
+}
+
+
+
+
+
+
+/*
+button{
+    transition: 1s;
+}
+
+button:hover{
+
+   
+    color: red;
+    
+
+}
+
+
+
+
+
+/*
+Sizing for diffrent screens
+.title{
+    font-size: 52px;
+}
+
+
+.paragraph{
+font-size: 24px;
+
+
+}
+
+@media (max-width: 640x ) {
+
+    .title{
+        font-size: 36px;
+    }
+
+    .paragraph{
+        font-size: 24px;
+        
+        
+        }
+}
+
+@media (max-width: 480px ) {
+
+    .title{
+        font-size: 32px;
+    }
+
+    .paragraph{
+        font-size: 20px;
+        
+        
+        }
+}
